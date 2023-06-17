@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(https://media.istockphoto.com/id/1183977299/video/seamless-loop-of-deep-blue-ocean-waves-from-underwater-background-light-rays-shining-through.jpg?s=640x640&k=20&c=q6wZYxRxg2MI0Ox09i_1GS9Hibf0R4Fvqip5wpaRPkI=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.headeritems {
+  
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+   color: black;
+   border-left: 2px solid ;
+   border-right: 2px solid ;
+    height: 10vh;
+}
+.display {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+
+}
+
+.support{
+    background-color:#22313E;
+    color: aliceblue;
+    width: 6%;
+    text-align: center;
+    
+}
+.content {
+    width: 94%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.back:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+.item:hover{
+    color: #2DC79E;
+    cursor: pointer;
+
+}
+.support:hover{
+    width: 8%;
+}
+
+

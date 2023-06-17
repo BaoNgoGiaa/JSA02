@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.1), rgba(255,255,255,0.4)), url(https://wallpapershome.com/images/wallpapers/polygon-1280x720-4k-hd-wallpaper-android-wallpaper-triangle-3519.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 2%;
+    display: flex;
+   
+    
+}
+.display {
+    height: 100vh;
+    width: 96%;
+    flex-direction: column;
+    display: flex;
+    margin-right: 1%;
+   
+}
+.header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+
+justify-content: space-between;
+align-items: center;
+color: #AAAAAE;
+}
+.headeritems {
+    width: 35%;
+    height: 100%;
+border: 1px solid black;
+background-color: black;
+border-radius: 4px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+opacity: 0.7;
+font-size: 24px;
+}
+.searchitems {
+    width: 20%;
+    height: 50%;
+        display: flex;
+        align-items: center;
+        
+        background-color: white;
+        border-radius: 4px;
+ 
+    
+}
+#Search {
+    width: 80%;
+    border-radius: 4px;
+  height: 90%;
+    font-size: 12px;  
+    border: 0px;  
+
+}
+.search {
+    background-color: #5489EF;
+    color: aliceblue;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 90%;
+    width: 20%;
+    border: 0px;
+}
+
+.back {
+    width: 20%;
+    color: #353A40;
+}
+.back:hover{
+    color: #2DC79E;
+    cursor: pointer;
+}
+.item:hover {
+    color: #2DC79E;
+    cursor: pointer;
+}
+.support{
+    background-color: #353A40;
+    width: 4%;
+    height: 100Vh;
+    text-align: center;
+
+}
+.support:hover {
+    width: 15%;
+}
+.WeedingFlower {
+    text-align: center;
+    margin: 10px;
+    color: whitesmoke;
+    font-size: 40px;
+    text-shadow: 2px 0 #353A40, -2px 0 #353A40, 0 2px #353A40, 0 -2px #353A40,
+             1px 1px #353A40, -1px -1px#353A40, 1px -1px#353A40, -1px 1px #353A40;
+
+}
+.container {
+    width: 100%;
+    height: 90%;
+}
+.imgframe {
+    width: 40%;
+    border: 1px solid black;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#A4A285;
+    box-shadow: 2px 0 #353A40, -2px 0 #353A40, 0 2px #353A40, 0 -2px #353A40,
+             1px 1px #353A40, -1px -1px#353A40, 1px -1px#353A40, -1px 1px #353A40;
+
+
+
+}
+.flwframe {
+    width: 100%;
+    height: 60%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+   
+}
+.rose {
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+}
+a {
+    color:  #AAAAAE;
+    text-decoration: none;
+}
+a:hover {
+    color: #2DC79E;
+    cursor: pointer;
+   
+}
+.bundledgift {
+    text-align: center;
+    color: #EBEDB9;
+    font-size: 28px;
+}
+.otheritem {
+    width: 100%;
+    height: 17%;
+    border-top: 2px solid #EBEDB9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 20px;
+}
+.otheritemflw {
+    width:20% ;
+    height: 80%;
+    border: 2px solid gray;
+    opacity: 0.8 ;
+}
+.otheritemflw:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.feedback {
+    width: 230px;
+   border: 1px solid saddlebrown;
+    height:200px ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+   
+  
+
+}
+.fbpic {
+  width: 100%;
+  height: 100%;
+
+object-fit: cover;
+}
+.feedbackpic {
+   width: 100%;
+   height: 80%;
+   display: flex; 
+   
+
+}
+.buy {
+    background-color: #2DC79E;
+ color: aliceblue;
+ border-radius: 4px;
+ border: 1px solid aliceblue;
+ height: 10%;
+ width: 12%;
+ font-size: 24px;
+ position: absolute;
+ opacity: 0.8;
+ left: 1000px;
+ top: 400px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+}
+.buybutton{
+    background-color: #2DC79E;
+    color: aliceblue;
+    border-radius: 4px;
+    border: none;
+    height: 90%;
+    width: 100%;
+    font-size: 24px;
+}
+.notice {
+    background-color: #E9EFB2;
+    height: 20%;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    color:#353A40 ;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florant</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/flowers-6/200/01-512.png"type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<style>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    
+overflow: hidden;
+    color: #31507d;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(74, 79, 97, 0.25) 0px 13px 27px -5px, rgba(74, 79, 97, 0.3) 0px 8px 16px -8px;
+    padding: 20px 35px 35px 35px;
+    text-align: center;
+    width: 500px;
+}
+form i {
+    color: #fff;
+    font-size: 30px;
+    transition: color 250ms ease-in;
+}
+form .input-wrapper {
+    margin-bottom: 30px;
+    position: relative;
+}
+form .input-wrapper i {
+    color: #a4a9b6;
+    position: absolute;
+    opacity: 0.85;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+form h1 {
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 25px 0 0 0;
+}
+form p {
+    color: #a4a9b6;
+    font-size: 18px;
+    margin: 2px 0 44px 0;
+}
+form input[type=text], form input[type=password], form input[type=email], form input[type=number]{
+    border: 1px solid #d8ddf0;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 13px 9px 13px 9px;
+    transition: border-color 250ms ease-in;
+}
+form input[type=text]:focus, form input[type=password]:focus, form input[type=email]:focus, form input[type=number]:focus {
+    border-color: #4c70ff;
+    outline: none;
+}
+form input[type=text]:focus + i, form input[type=password]:focus + i, form input[type=email]:focus + i, form input[type=email]:focus + i {
+    color: #4c70ff;
+}
+form input {
+    width: 100%;
+}
+form ::placeholder {
+    color: #a4a9b6;
+    font-size: 15px;
+    opacity: 1;
+}
+form button[type=submit] {
+    background: #4c70ff;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 18px 10px;
+    width: 100%;
+}
+form button[type=submit] i {
+    margin-left: 5px;
+}
+
+</style>
+<div class="display">
+  <div class="header">
+      <h4 class="back"><a href="./HomeScreen1.html"><- Back</a></h4>
+      <div class="headeritems">
+          <h6 class="item" ><i class="fa-solid fa-border-all"></i>ㅤ<a href="./All flower.html">All Flw</a></h6>
+          <h6 class="item"><i class="fa-solid fa-fire"></i>ㅤ<a href="./Popular.html">Popular Flw</a></h6>
+          <h6 class="item"><i class="fa-solid fa-feather"></i>ㅤ<a href="./OtherItems.html">Items</a> </h6>
+          <h6 class="item"><i class="fa-solid fa-tag"></i>ㅤ<a href="./SaleFlw.html">Sale Flw</a></h6>
+      </div>
+      <div class="searchitems">
+          <label for="input"></label>
+          <input type="text"id="Search" placeholder="Search">
+          <input type="button" value="Find" class="search">
+           </div>
+  </div>
+  <div class="form">
+<form>
+  <h1>Welcome </h1>
+  <p>Please Sign up continue.</p>
+  
+  <div class="input-wrapper">
+    <input type="text" placeholder="Enter your username"  required>
+    <i class="bx bxs-user-circle"></i>
+  </div>
+  <div class="input-wrapper">
+    <input type="password" placeholder="Enter your password"  required>
+    <i class="bx bxs-user-circle"></i>
+  </div>
+
+  <div class="input-wrapper">
+    <input type="email" placeholder="Enter your email" required>
+    <i class="bx bx-key"></i>
+  </div>
+  <div class="input-wrapper">
+    <input type="number" placeholder="Enter your PhoneNumber" required>
+    <i class="bx bx-key"></i>
+  </div>
+  
+  <div>
+    <button type="submit" onclick="showMessage()">
+      Sign up
+      <i class='bx bx-right-arrow-alt'></i>
+    </button>
+  </div>
+</form>
+</div>
+
+<script>
+     function showMessage(){
+        alert('CHÚC MỪNG BẠN ĐĂNG KÍ THÀNH CÔNG :))');
+    }
+ const form = document.getElementById("form");
+    
+    form.addEventListener("submit", function() {
+        alert("Form is submited !!");
+    });
+</script>
+
+</body>
+</html>

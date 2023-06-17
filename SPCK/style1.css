@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+
+    padding-left: 2%;
+    display: flex;
+
+   
+    
+}
+.display {
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+
+   
+}
+
+.header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+
+justify-content: space-between;
+align-items: center;
+color: #AAAAAE;
+margin-top: 10px;
+}
+
+.container {
+ 
+    
+    height: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    padding-left: 30px;
+
+}
+
+
+.catgory1{
+height: 60%;
+width: 80%;
+
+
+}
+.category {
+    height: 100%;
+    width: 30%;
+    display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+list-style: none; 
+background:linear-gradient(rgba(30,41,45,0.8), rgba(30,41,45,0.9))
+
+}
+ul li::before {
+    content: "\2022";
+    color: #E4E4E4;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    
+  }
+.categoryitem{
+    text-decoration: none;
+    color: #E4E4E4;
+    text-shadow: -0.1px 0.1px 0 #000,
+    0.1px 0.1px 0 #000,
+   0.1px -0.1px 0 #000,
+  -0.1px -0.1px 0 #000;;
+}
+
+.categoryitem1{
+    text-decoration: none;
+    color: #FE4554;
+    font-weight: bold;
+    font-size: 65px;
+    text-shadow: -0.1px 0.1px 0 #000,
+    0.1px 0.1px 0 #000,
+   0.1px -0.1px 0 #000,
+  -0.1px -0.1px 0 #000;;
+}
+.logoframe {
+    border: 1px solid b;
+    font-size: 40px;
+    color:white ;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000,
+   1px -1px 0 #000,
+  -1px -1px 0 #000;;
+    width: 50%;
+    height: 100%;
+    display: flex;
+   align-items: center;
+}
+.span {
+    font-size: 24px;
+}
+.categoryitem:hover{
+    color: #42FED0;
+    cursor: pointer;
+    margin-left: 10px;
+    text-shadow: 0px 0px transparent;
+}
+.otherthing {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.flowersyp {
+    height: 100%;
+   width: 100%;
+}
+.noticeframe {
+    position: absolute;
+    color: #50B3D7;
+    width: 200px;
+    height: 50px;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 13px;
+opacity: 0.9;
+left: 1139px;
+top: 350px;
+}
+.inforframe {
+    width: 100%;
+    height: 38%;
+    margin-top: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+ 
+    border-radius: 4px;
+
+}
+img {
+height: 100%;
+}    
+.infor {
+  
+    width: 100%;
+    height: 25%;
+    font-size: 18px;
+    border: 1px solid #AAAAAE;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0.8;
+    background-color: #B8B7BB;
+
+}
+.infor1 {
+  
+    width: 100%;
+    height: 80%;
+    font-size: 18px;
+    border: 1px solid #AAAAAE;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0.8;
+
+}
+h1{
+     font-size: 18px;
+}
+.infor:hover {
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid gold;
+}
+.moreinfor{
+    background-color:#43908B ;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.moreinfor:hover{
+    background-color:#43908B ;
+    opacity: 1;
+    cursor: pointer;
+}
+.discribe {
+
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+
+
+}
+.COLOR {
+    background-color: #59565F;
+
+}
+.saleframe {
+    border-top: 1px solid #5489EF   ;
+    font-size: 13px;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.noticeframe:hover {
+    opacity: 1.1;
+    cursor: pointer;
+}
+.slideshow {
+    height: 60%;
+    width: 100%;
+    border:1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AAAAAE;
+    border-radius: 4px;
+    
+}
+.slideshow:hover {
+    border: 1px solid snow;
+    cursor: pointer;
+}
+.categoryitem1:hover{
+    color: #42FED0;
+    cursor: pointer;
+    margin-left: 10px;
+    text-shadow: 0px 0px transparent;
+}
+
+.logo{
+    width: 5%;
+    height: 60%;
+
+}
+.loginsignup {
+    font-size: 14px;
+    color:#ACAFAA;
+
+    width: 20%;
+    height: 100%;
+    display: flex;
+   align-items: center;
+   
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+ 
+  }
+.loginsignupitem:hover {
+    color: aliceblue;
+    cursor: pointer;
+    background-color: #D0CEC9;
+    opacity: 0.8;
+   border-radius: 4px;
+    
+}
+.headeritems {
+    width: 35%;
+    height: 100%;
+border: 1px solid black;
+background-color: black;
+border-radius: 4px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+opacity: 0.7;
+font-size: 24px;
+margin-top: 10px;
+}
+.searchitems {
+    width: 30%;
+        display: flex;
+        justify-content: end;
+    
+}
+#Search {
+    width: 10%;
+    border-radius: 4px;
+  height: 45%;
+    font-size: 12px;
+}
+.search {
+    background-color: #5489EF;
+    color: aliceblue;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 45%;
+}
+
+.back {
+    width: 20%;
+    color: #353A40;
+}
+.back:hover{
+    color: #2DC79E;
+    cursor: pointer;
+}
+.item:hover {
+    color: #2DC79E;
+    cursor: pointer;
+}
+.support{
+    background-color: #353A40;
+    width: 4%;
+    height: 100Vh;
+    text-align: center;
+
+}
+
+.kindofflower {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 4vh;
+    padding-right: 15% ;
+    padding-left: 15%;
+}
+.floweritem:hover {
+    color: #2DC79E;
+    cursor: pointer;
+    border-bottom: 1px solid #2DC79E;
+}
+.content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

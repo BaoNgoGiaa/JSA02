@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(https://wallpapershome.com/images/wallpapers/polygon-1280x720-4k-hd-wallpaper-android-wallpaper-triangle-3519.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 2%;
+    display: flex;
+    
+}
+.display {
+    height: 100vh;
+    width: 96%;
+    flex-direction: column;
+    display: flex;
+    margin-right: 1%;
+}
+.header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+
+justify-content: space-between;
+align-items: center;
+color: #AAAAAE;
+}
+.headeritems {
+    width: 35%;
+    height: 100%;
+border: 1px solid black;
+background-color: black;
+border-radius: 4px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+opacity: 0.6;
+font-size: 24px;
+}
+.searchitems {
+    width: 20%;
+    height: 50%;
+        display: flex;
+        align-items: center;
+        
+        background-color: white;
+        border-radius: 4px;
+ 
+    
+}
+#Search {
+    width: 80%;
+    border-radius: 4px;
+  height: 90%;
+    font-size: 12px;  
+    border: 0px;  
+
+}
+.search {
+    background-color: #5489EF;
+    color: aliceblue;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 90%;
+    width: 20%;
+    border: 0px;
+}
+
+.back {
+    width: 20%;
+    color: #353A40;
+}
+.back:hover{
+    color: #2DC79E;
+    cursor: pointer;
+}
+.item:hover {
+    color: #2DC79E;
+    cursor: pointer;
+}
+.support{
+    background-color: #353A40;
+    width: 4%;
+    height: 100Vh;
+    text-align: center;
+    color: white;
+
+}
+
+.kindofflower {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 4vh;
+    padding-right: 15% ;
+    padding-left: 15%;
+}
+.floweritem:hover {
+    color: #2DC79E;
+    cursor: pointer;
+    border-bottom: 1px solid #2DC79E;
+}
+.content {
+    width: 100%;
+    height: 90%;
+   display: grid;
+   grid-template-columns: repeat(6,0.5fr);
+   grid-template-rows: repeat(4,120px);
+   grid-template-areas:"pic1 pic1 pic1 pic1 pic1 pic1"
+                       "pic1 pic1 pic1 pic1 pic1 pic1"
+                       "pic1 pic1 pic1 pic1 pic1 pic1"
+                       "pic2 pic4 pic4 pic3 pic3 pic3" ;
+
+    margin-top: 20px;
+                       
+                       
+}
+.content img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 2px solid gainsboro;
+    margin: 4px;
+}
+.pic1 {
+    grid-area: pic1;
+   object-fit: cover;
+}
+.pic2 {
+    grid-area: pic2;
+    margin: 0;
+}
+.pic3 {
+    grid-area: pic3;
+    margin: 0;
+}
+.pic4 {
+    grid-area: pic4;
+    margin: 0;
+}
+.Tulipflw {
+position: absolute;
+left: 50px;
+top: 100px;
+font-size: 32px;
+color: black;
+text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+
+}
+.WRoseflw {
+    position: absolute;
+left: 50px;
+top: 525px;
+font-size: 16px;
+color: black;
+text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+.Roseflw {
+    position: absolute;
+left: 290px;
+top: 525px;
+font-size: 16px;
+color: black;
+text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+.Blossomflw {
+    position: absolute;
+left: 700px;
+top: 525px;
+font-size: 16px;
+color: black;
+text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+.Buy {
+ background-color: #2DC79E;
+ color: aliceblue;
+ border-radius: 4px;
+ border: 1px solid aliceblue;
+ height: 10%;
+ width: 12%;
+ font-size: 24px;
+ position: absolute;
+ opacity: 0.8;
+ left: 1000px;
+ top: 350px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+}
+.SALE50{
+    position: absolute;
+left: 1000px;
+top: 100px;
+font-size: 60px;
+color:coral;
+text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+border-radius: 4px;
+border: 4px solid white;
+background-color: white;
+}
+
+.countdown {
+    width: 20%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style:square ;
+    color: #E2E4A4;
+    background-color: #353A40;
+    opacity: 0.8;
+    position: absolute;
+    height: 4%;
+    left: 500px;
+ top: 430px;
+ border-radius: 4px;
+ font-size: 24px;
+ 
+}
+a {
+    color:  #AAAAAE;
+    text-decoration: none;
+}
+a:hover {
+    color: #2DC79E;
+    cursor: pointer;
+   
+}

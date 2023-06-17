@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florant</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="icon"
+      href="https://cdn0.iconfinder.com/data/icons/flowers-6/200/01-512.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="js.js" />
+    <link rel="stylesheet" href="style2.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="display">
+      <div class="header">
+        <h4 class="back"><a href="./HomeScreen.html"><- Back</a></h4>
+        <div class="headeritems">
+          <h6 class="item">
+            <i class="fa-solid fa-border-all"></i>ㅤ<a href="./All flower.html"
+              >All Flw</a
+            >
+          </h6>
+          <h6 class="item">
+            <i class="fa-solid fa-fire"></i>ㅤ<a href="./Popular.html"
+              >Popular Flw</a
+            >
+          </h6>
+          <h6 class="item">
+            <i class="fa-solid fa-feather"></i>ㅤ<a href="./OtherItems.html"
+              >Items</a
+            >
+          </h6>
+          <h6 class="item">
+            <i class="fa-solid fa-tag"></i>ㅤ<a href="./SaleFlw.html"
+              >Sale Flw</a
+            >
+          </h6>
+        </div>
+        <div class="searchitems">
+          <label for="input"></label>
+          <input type="text" id="Search" placeholder="Search" />
+          <input type="button" value="Find" class="search" />
+        </div>
+      </div>
+
+      <div class="content">
+        <a href="./Buy.html" class="pic1"
+          ><img
+            class="pic1"
+            src="./Flower for SPCK/flower-vase-3840x2160.jpg"
+            alt=""
+        /></a>
+        <a href="./Buy.html" class="pic2"
+          ><img
+            class="pic2"
+            src="./Flower for SPCK/50-hinh-anh-hoa-hong-dep-va-lang-man-nhat_105817540.jpg"
+            alt=""
+        /></a>
+        <a href="./Buy.html" class="pic3"
+          ><img
+            class="pic3"
+            src="./Flower for SPCK/Hinh-anh-hoa-Anh-Dao-dep-nhat.jpg"
+            alt=""
+        /></a>
+        <a href="./Buy.html" class="pic4"
+          ><img
+            class="pic4"
+            src="./Flower for SPCK/hinh-anh-hoa-hong-dep-va-y-nghia.jpg"
+            alt=""
+        /></a>
+      </div>
+      <h2 class="Tulipflw"><b>Tulip Flower</b></h2>
+      <h2 class="WRoseflw"><b>White Rose</b></h2>
+      <h2 class="Roseflw"><b>Rose</b></h2>
+      <h2 class="Blossomflw"><b>Blossom</b></h2>
+
+      <a href="./Buy.html" class="Buy"
+        ><input type="button" value="Buy" class="Buy" />BUY</a
+      >
+      <h1 class="SALE50">SALE 50%</h1>
+    </div>
+    <div class="container">
+      <div id="countdown">
+        <ul class="countdown">
+          <li><span id="days"></span></li>
+          <li><span id="hours"></span></li>
+          <li><span id="minutes"></span></li>
+          <li><span id="seconds"></span></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+        let today = new Date(),
+          dd = String(today.getDate()).padStart(2, "0"),
+          mm = String(today.getMonth() + 1).padStart(2, "0"),
+          yyyy = today.getFullYear(),
+          nextYear = yyyy + 1,
+          dayMonth = "09/30/",
+          birthday = dayMonth + yyyy;
+
+        today = mm + "/" + dd + "/" + yyyy;
+        if (today > birthday) {
+          birthday = dayMonth + nextYear;
+        }
+        //end
+
+        const countDown = new Date(birthday).getTime(),
+          x = setInterval(function () {
+            const now = new Date().getTime(),
+              distance = countDown - now;
+
+            (document.getElementById("days").innerText = Math.floor(
+              distance / day
+            )),
+              (document.getElementById("hours").innerText = Math.floor(
+                (distance % day) / hour
+              )),
+              (document.getElementById("minutes").innerText = Math.floor(
+                (distance % hour) / minute
+              )),
+              (document.getElementById("seconds").innerText = Math.floor(
+                (distance % minute) / second
+              ));
+            if (distance < 0) {
+              document.getElementById("headline").innerText =
+                "It's my birthday!";
+              document.getElementById("countdown").style.display = "none";
+              document.getElementById("content").style.display = "block";
+              clearInterval(x);
+            }
+            //seconds
+          }, 0);
+      })();
+    </script>
+    <div class="support">
+      <div class="Cart">Cart :</div>
+    </div>
+  </body>
+</html>
